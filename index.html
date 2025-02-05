@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="common/css/bootstrap.min.css" />
+  <script src="common/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Contact-App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 shadow-lg mt-5">
+        <div class="row overflow-hidden">
+          <div class="col-md-6 py-5 login-form">
+            <div class="active-box l-active" style="opacity: 0; z-index: -1">
+              <h2>Sign In</h2>
+              <p>Sign In if you have any account</p>
+              <button id="l-active-btn">Sign In</button>
+            </div>
+            <h2 class="text-center">SIGN IN</h2>
+            <div class="text-center">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <br />
+            <form>
+              <input type="email" id="username" placeholder="Username" class="form-control mb-3" />
+              <input type="password" id="password" placeholder="Password" class="form-control mb-3" />
+              <div align="center">
+                <a href="#">Forget Password</a>
+                <br /><br />
+                <button class="btn" id="login-btn">Sign In</button>
+                <p class="l-msg"></p>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 py-5 login-form">
+            <div class="active-box s-active">
+              <h2>Sign Up</h2>
+              <p>Sign Up if you have not any account</p>
+              <button id="s-active-btn">Sign Up</button>
+            </div>
+            <h2 class="text-center">SIGN UP</h2>
+            <div class="text-center">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <br />
+            <form id="myForm">
+              <input id="f-name" type="text" placeholder="First Name" class="form-control mb-3" />
+              <input id="l-name" type="text" placeholder="Last Name" class="form-control mb-3" />
+              <select class="form-select mb-3" id="floatingSelect" aria-label="Floating label select example">
+                <option value="gender" selected>Select Your Gender: </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <input id="s-username" type="text" placeholder="Username" class="form-control mb-3" />
+              <input id="s-password" type="password" placeholder="Password" class="form-control mb-3" />
+              <div align="center">
+                <br />
+                <button class="btn signup-btn">Sign Up</button>
+                <p class="msg"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
